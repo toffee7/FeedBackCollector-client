@@ -19,7 +19,7 @@ const Header = (props) => {
                         <a className="nav-link" href="/">Pricing</a>
                     </li>
                 </ul>
-                <button className="btn btn-sm align-middle btn-outline-secondary" type="button">Sign In</button>
+                <a href="/auth/github"><button className="btn btn-sm align-middle btn-outline-secondary" type="button" >Sign In</button></a>
             </div>
         </nav>
     );
