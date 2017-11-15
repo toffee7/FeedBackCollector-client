@@ -6,4 +6,5 @@ const fetchItems = async () => {
     console.log(json);
 }
 
+
 fetchItems();
