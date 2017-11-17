@@ -11,13 +11,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 class App extends Component {
     render() {
+       
         return (
         <div>
+             <Header />
             <BrowserRouter>
-                <Header />
+                
                 <Route path="/" exact component={LoginModal}/>
-                <Footer />
+                
             </BrowserRouter>
+            <Footer />
         </div>
         );
     }
