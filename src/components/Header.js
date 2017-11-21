@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-
+import  { Link } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -15,7 +15,7 @@ class Header extends Component {
             case false: 
                  return <a href="/auth/github"><button className="btn btn-sm align-middle btn-outline-secondary" type="button" >Sign In</button></a>;
             default:
-                return <div className="btn btn-sm align-middle btn-outline-secondary"> welcome </div>
+                return <a href="/api/logout"><button className="btn btn-sm align-middle btn-outline-secondary" type="button" >Sign Out</button></a>;
         }
     }
 
@@ -31,7 +31,7 @@ class Header extends Component {
                 <div className="collapse navbar-collapse" id="navbarText">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/">Features</a>

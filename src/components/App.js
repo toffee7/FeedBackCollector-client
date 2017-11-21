@@ -15,10 +15,8 @@ class App extends Component {
         return (
         <div>
              <Header />
-            <BrowserRouter>
-                
-                <Route path="/" exact component={LoginModal}/>
-                
+             <BrowserRouter>                
+                <Route path="/" exact component={LoginModal}/>                
             </BrowserRouter>
             <Footer />
         </div>
